@@ -1,0 +1,150 @@
+.midContent {
+  display: flex;
+  justify-content: center;
+  width: 80%;
+  min-width: 1200px;
+  padding: 30px 0;
+}
+
+.oneNote {
+    display: flex;
+  flex-direction: column;
+    width: 100%;
+    height: auto;
+    min-height: 800px;
+    background: white;
+    margin-left: 10px;
+}
+
+.noteProperty {
+  display: flex;
+  justify-content: start;
+  align-items: center;
+}
+
+.propertyName {
+  width: 100px;
+  height: 50px;
+  line-height: 50px;
+  text-align: right;
+  font-weight: bold;
+  font-size: 16px;
+}
+
+.propertyInput{
+  margin: 10px;
+}
+
+#addNoteTitle{
+  width: 400px;
+}
+
+.labelAddBtnCls {
+  width: 60px;
+  height: 30px;
+  background: #54acd2;
+  color: white;
+  border: none;
+  outline: none;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px #cccccc;
+  cursor: pointer;
+}
+
+.propertyInput > label > input {
+  height: 36px;
+  border: 1px solid #CCCCCC;
+  outline: none;
+  padding-left: 10px;
+  border-radius: 3px;
+}
+
+#AddCustomLabels {
+  width: 200px;
+}
+
+#labelBar {
+  margin-left: 110px;
+}
+
+.propertyInput {
+  position: relative;
+}
+
+.propertyInput input:focus{
+  box-shadow: 2px 2px 10px #cccccc;
+}
+
+.propertyInput textarea {
+  outline: none;
+  padding-left: 10px;
+  width: 500px;
+  height: 100px;
+  border: 1px solid #cccccc;
+
+}
+
+.maxInputText{
+  font-size: 12px;
+  position: absolute;
+  bottom: 15px;
+  right: 10px;
+  font-weight: normal;
+}
+
+.propertyInput textarea:focus {
+    box-shadow: 2px 2px 10px #cccccc;
+}
+
+.newLabel {
+  height: 30px;
+  display: inline-block;
+  border: 1px solid #2aabd2;
+  border-radius: 3px;
+  text-align: center;
+  line-height: 30px;
+  margin-right: 10px;
+}
+
+.newLabel span {
+
+  margin: 10px;
+}
+
+.closeSymbol {
+  color: #B5B5B5;
+  float: right;
+  margin-right: 5px;
+}
+
+.closeSymbol:hover{
+    font-size: 17px;
+    cursor: pointer;
+}
+
+.noteEditor {
+  margin: 20px 0;
+}
+
+.CodeMirror {
+    min-height: 500px;
+}
+.CodeMirror-gutters {
+    min-height: 500px;
+}
+.CodeMirror-scroll {
+    margin-top: 0;
+    min-height: 500px;
+}
+
+.FootButton {
+  margin-bottom: 10px;
+  height: 34px;
+  width: 60px;
+  color: white;
+  background: #54acd2;
+  border: 0;
+  border-radius: 5px;
+  box-shadow: 2px 2px 5px #cccccc;
+  align-self: center;
+}

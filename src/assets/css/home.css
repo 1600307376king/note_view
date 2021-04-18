@@ -1,0 +1,477 @@
+#noteList {
+  background: #f5f6f7;
+  display: flex;
+  justify-content: center;
+  width: 100%;
+}
+
+#listContainer {
+display: flex;
+justify-content: space-evenly;
+width: 80%;
+min-width: 1000px;
+margin-top: 15px;
+}
+
+/*左侧分类导航*/
+#labelListBox {
+  display: flex;
+  flex-direction: column;
+  width: 300px;
+  height: 800px;
+  background: white;
+}
+
+#searchBox {
+    margin: 10px;
+}
+
+#searchBox input {
+    margin-left: 10px;
+}
+
+#searchBox label {
+    margin-left: 10px;
+}
+
+#submit {
+    background: #FF8C69;
+    border-radius: 5px;
+    border: none;
+    width: 60px;
+    height: 30px;
+    text-align: center;
+    color: white;
+}
+
+#submit:hover {
+    background: #EE3B3B
+}
+
+.error-tip {
+    width: 100%;
+    text-align: center;
+    color: red;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+#line {
+  height: 34px;
+  padding: 0 15px;
+}
+
+#redLine {
+    margin-top: 15px;
+    border: 3px solid #CD5C5C;
+}
+
+#sortNoteBox a {
+    padding: 10px 20px;
+    color: black;
+    text-decoration: none;
+}
+
+#labelInnerBox {
+    height: 700px;
+    overflow-y: hidden;
+    overflow-x: hidden;
+  padding: 15px;
+}
+
+#labelInnerBox:hover{
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
+
+#labelInnerBox:hover {
+  overflow-y: scroll;
+}
+
+#labelInnerBox:hover #navMenu{
+  /*overflow-y: scroll;*/
+  /*overflow-x: hidden;*/
+  padding-right: 0;
+}
+
+#labelInnerBox::-webkit-scrollbar { /*滚动条整体样式*/
+    width: 10px; /*高宽分别对应横竖滚动条的尺寸*/
+}
+
+#labelInnerBox::-webkit-scrollbar-thumb { /*滚动条里面小方块*/
+    border-radius: 10px;
+    background: lightgray;
+}
+
+#labelInnerBox::-webkit-scrollbar-track { /*滚动条里面轨道*/
+    border-radius: 10px;
+    background: #EDEDED;
+}
+
+#labelInnerBox img {
+    margin: 5px;
+}
+
+.firstMenu {
+    font-size: 24px;
+}
+
+.one:hover {
+    background: #cccccc;
+}
+
+#navMenu span {
+  user-select: none;
+}
+
+#navMenu img {
+  user-select: none;
+}
+
+/* navMenu */
+#navMenu {
+  list-style: none;
+  margin: 0;
+  padding: 0 10px 0 0;
+  cursor: pointer;
+}
+
+#navMenu > li {
+  display: flex;
+  flex-direction: column;
+}
+
+#navMenu > li > a {
+  display: flex;
+  padding-left: 0;
+  line-height: 40px;
+  transition: all .3s;
+  position: relative;
+  text-decoration: none;
+  font-size: 17px;
+  width: 100%;
+}
+
+#navMenu > li > a > img {
+    width: 30px;
+    height: 30px;
+    margin-right: 10px;
+}
+
+.arrow {
+  position: relative;
+  width: 180px;
+  height: 30px;
+  margin-right: 20px;
+}
+
+.arrow:after {
+  content: " ";
+  height: 10px;
+  width: 10px;
+  border-width: 2px 2px 0 0;
+  border-color: #999999;
+  border-style: solid;
+  transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+  transform-origin: center;
+  transition: transform .3s;
+  position: absolute;
+  top: 50%;
+  right: 10px;
+}
+
+.arrow.arrowOpen:after {
+  transform-origin: center;
+  transform: rotate(135deg);
+  transition: transform .6s;
+}
+
+.subMenu a {
+  text-decoration: none;
+  color: black;
+  font-size: 16px;
+}
+
+.subMenu span {
+  font-size: 16px;
+}
+
+.subMenu {
+  list-style: none;
+  display: none;
+}
+
+.subMenu li {
+  /*height: 0;*/
+  /*display: none;*/
+  /*transition: all 1s;*/
+}
+
+/*.menuFade-enter-active {*/
+/*  height: 30px;*/
+/*  transition: height 2s;*/
+/*}*/
+
+/*.menuFade-enter {*/
+/*  height: 0;*/
+/*}*/
+
+/*右侧笔记列表*/
+#noteListBox {
+  display: flex;
+  flex-direction: column;
+  min-width: 690px;
+  width: 69%;
+}
+
+#sortNoteBox {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  height: 40px;
+  background: white;
+}
+
+#sortNoteBox ul {
+  list-style: none;
+  display: flex;
+  justify-content: start;
+  height: 100%;
+  width: auto;
+  margin: 0;
+  text-align: center;
+  padding: 0;
+  line-height: 40px;
+}
+
+#sortNoteBox li {
+  width: 100px;
+  height: 100%;
+  font-size: 14px;
+  margin-right: 3px;
+}
+
+#sortNoteBox ul .active{
+    background-color: indianred;
+
+}
+
+#sortNoteBox li:hover {
+    background: indianred;
+}
+
+#notes {
+  background: white;
+  height: auto;
+  padding: 0;
+  margin: 5px 0;
+  list-style: none;
+  min-height: 1020px;
+}
+
+.oneNotes {
+    border-bottom: 2px solid #F0F1F2;
+    height: 100px;
+}
+
+.listDetail{
+  display: flex;
+  flex-direction: column;
+}
+
+.noteTitle {
+  height: 40px;
+  display: flex;
+  justify-content: space-between;
+  padding-top: 15px;
+  padding-left: 20px;
+}
+
+.noteTitle a:hover{
+  color: indianred;
+}
+
+.noteTitle a {
+  color: black;
+  text-decoration: none;
+  width: 300px;
+
+}
+
+.titleLink {
+    width: 70%;
+    font-size: 24px;
+    font-weight: bold;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    overflow: hidden;
+}
+
+.editNote {
+
+    padding-right: 20px;
+    width: auto;
+    height: 34px;
+    line-height: 34px;
+
+}
+
+.vLine {
+    width: 20px;
+    color: lightgray;
+}
+
+.noteFooter {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.noteFooter >span {
+  height: 44px;
+  line-height: 44px;
+  padding-left: 20px;
+}
+
+.noteFooter img {
+  width: 16px;
+  height: 16px;
+}
+
+.footClick {
+  font-size: 16px;
+  min-width: 100px;
+  height: 42px;
+  line-height: 42px;
+  color: #B5B5B5;
+  padding-right: 20px;
+}
+
+.footClick span {
+  min-width: 20px;
+  text-align: center;
+}
+
+.num {
+  color: lightskyblue;
+}
+
+.footLabels {
+  font-size: 12px;
+  /*text-align: center;*/
+  height: auto;
+  line-height: 32px;
+  width: 600px;
+  flex-grow: 1;
+}
+
+.footLabels span {
+    min-width: 50px;
+    /*border: 1px solid #F0F1F2;*/
+    color: #3BB189;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px;
+}
+
+.footLabels span:hover {
+    border: 1px solid lightskyblue;
+}
+
+.load-tip-block{
+    text-align: center;
+    background: #FFFDEC;
+    color: orange;
+    height: 30px;
+    line-height: 30px;
+    width: 100%;
+    opacity: 0;
+}
+
+#searchBox {
+  width: 300px;
+  justify-content: space-evenly;
+  display: flex;
+  align-items: center;
+  height: 40px;
+  padding: 0;
+  margin: 0;
+}
+
+#searchBox input {
+  height: 30px;
+  outline-color: #CD5C5C;
+  border: 1px solid #e8e8ed;
+  background: #f5f6f7;
+  border-radius: 3px;
+
+}
+
+#searchBtn {
+  background-color: #CD5C5C;
+  color: white;
+  outline: none;
+  border-radius: 3px;
+  height: 30px;
+  width: 60px;
+  border: none;
+
+}
+
+#pagingBox {
+    text-align: right;
+}
+
+.pagination {
+  display: flex;
+  justify-content: flex-end;
+  list-style: none;
+
+}
+
+.pagination a {
+  text-decoration: none;
+  color: grey;
+}
+
+.pagingBtn .active {
+  background: #CD5C5C;
+}
+
+.pagingBtn {
+  width: 30px;
+  height: 30px;
+  border: 1px solid #DFDFDF;
+  text-align: center;
+  background: white;
+}
+
+.pagingBtnActive {
+  background: #CD5C5C;
+  width: 30px;
+  height: 30px;
+  border: 1px solid #DFDFDF;
+
+  text-align: center;
+}
+
+.pagingBtnActive a {
+  color: white;
+}
+
+.pagingBtn:hover {
+  background: #F5F6F7;
+}
+
+.pagingPre {
+  border-top-left-radius: 5px;
+  border-bottom-left-radius: 5px;
+}
+
+.pagingNext {
+  border-top-right-radius: 5px;
+  border-bottom-right-radius: 5px;
+}
+
+
+

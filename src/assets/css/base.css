@@ -1,0 +1,101 @@
+body {
+  background: #f5f6f7;
+  margin: 0;
+  padding: 0;
+}
+
+#viewBase {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+#topNav {
+  height: 40px;
+  width: 100%;
+  background: white;
+  /*position: fixed;*/
+  border-top: 1px solid #FF7F24;
+  border-bottom: 2px solid #F5F6F7;
+  /*z-index: 100;*/
+  display: flex;
+  justify-content: center;
+  box-shadow: 0 1px 3px #e1e1e1
+}
+
+#topContainer{
+  width: 70%;
+  min-width: 1000px;
+  height: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+#menuBlock {
+  height: 100%;
+  font-size: 16px;
+  display: flex;
+  justify-content: flex-start;
+}
+
+#menuBlock ul{
+  margin: 0;
+}
+
+
+#menuBlock ul {
+    list-style: none;
+    margin-bottom: 0;
+    height: 40px;
+    line-height: 40px;
+    padding-left: 0;
+}
+
+#menuBlock li {
+    display: inline-block;
+    text-align: center;
+    width: 100px;
+}
+
+#menuBlock li:hover {
+    background: #F0F1F2;
+}
+
+#menuBlock a {
+    text-decoration: none;
+    color: black;
+    /*使a标签能够充满li*/
+    display: block;
+}
+
+
+#loginBlock a{
+  color: #CD5C5C;
+  width: 100px;
+  height: 40px;
+  line-height: 40px;
+  text-decoration: none;
+  font-size: 16px;
+}
+
+#allContent {
+  min-height: 801px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+#myFooter {
+  background: white;
+  width: 100%;
+  text-align: center;
+  line-height: 100px;
+  bottom: 0;
+  font-size: 16px;
+}
+
+#filingNumber a{
+  text-decoration: none;
+  display: flex;
+  justify-content: center;
+}
