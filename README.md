@@ -1,30 +1,13 @@
-# note_view
+## nodejs 安装链接
+  https://nodejs.org/en/download/
 
-> A Vue.js project
+## 安装cnpm
+  npm install -g cnpm --registry=https://registry.npm.taobao.org
 
-## Build Setup
+## 安装vue命令
+  cnpm install vue -g
 
-``` bash
-# install dependencies
-npm install
+  cnpm install vue-cli -g
 
-# serve with hot reload at localhost:8080
-npm run dev
-
-# build for production with minification
-npm run build
-
-# build for production and view the bundle analyzer report
-npm run build --report
-
-# run unit tests
-npm run unit
-
-# run e2e tests
-npm run e2e
-
-# run all tests
-npm test
-```
-
-For a detailed explanation on how things work, check out the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
+## 运行项目
+  npm run dev
